@@ -5,10 +5,13 @@ RUN apt-get update
 RUN apt -y install wget
 RUN apt -y install make build-essential ruby ruby-dev
 RUN apt -y install dotnet-sdk-6.0
+RUN apt -y install nodejs
 RUN gem install jekyll bundler
 #RUN echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 ENV GEM_HOME $HOME/gems
 ENV PATH $HOME/gems/bin:$PATH
+
+ npm install -g fsh-sushi
 
 #RUN echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 #RUN echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc

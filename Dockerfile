@@ -1,4 +1,4 @@
-FROM openjdk:17-slim-bullseye
+FROM amazoncorretto
 
 ### Install ruby & jekyll
 RUN apt-get update

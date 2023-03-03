@@ -11,7 +11,7 @@ RUN gem install jekyll bundler
 ENV GEM_HOME $HOME/gems
 ENV PATH $HOME/gems/bin:$PATH
 
- npm install -g fsh-sushi
+RUN npm install -g fsh-sushi
 
 #RUN echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 #RUN echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc

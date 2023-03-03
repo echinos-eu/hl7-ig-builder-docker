@@ -1,4 +1,4 @@
-FROM amazoncorretto
+FROM eclipse-temurin
 
 ### Install ruby & jekyll
 RUN apt-get update

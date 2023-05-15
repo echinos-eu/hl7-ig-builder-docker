@@ -23,12 +23,5 @@ RUN npm install -g fsh-sushi
 
 
 ### Install dotnet
-#ENV PATH /root/.dotnet/tools:$PATH
-#RUN wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-#RUN dpkg -i packages-microsoft-prod.deb
-#RUN rm packages-microsoft-prod.deb
-#
-#RUN apt-get update
-#RUN apt-get install -y dotnet-sdk-6.0
-#
-#RUN dotnet tool install -g firely.terminal
+RUN dotnet tool install -g firely.terminal
+ENV PATH /root/.dotnet/tools:$PATH

@@ -19,4 +19,4 @@ RUN dotnet tool install -g firely.terminal
 ENV PATH /root/.dotnet/tools:$PATH
 
 ## Install IG Publisher
-RUN wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -P /var/igs
+RUN wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -P /opt/publisher

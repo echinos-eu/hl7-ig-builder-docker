@@ -18,5 +18,5 @@ RUN npm install -g fsh-sushi
 RUN dotnet tool install -g firely.terminal
 ENV PATH /root/.dotnet/tools:$PATH
 
-## Install IG Publisher
+### Install IG Publisher
 RUN wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -P /opt/publisher

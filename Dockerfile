@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt -y install wget
 RUN apt -y install make build-essential ruby ruby-dev
 RUN apt -y install dotnet-sdk-6.0
-RUN curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
 RUN apt update
 RUN apt -y install nodejs
 RUN node -v

@@ -25,3 +25,7 @@ ENV PATH /root/.dotnet/tools:$PATH
 
 ### Install IG Publisher
 RUN wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -P /opt/publisher
+
+### Install hapi-fhir-cli
+RUN wget https://github.com/hapifhir/hapi-fhir/releases/download/v7.0.2/hapi-fhir-7.0.2-cli.zip -P /opt/hapi-cli
+RUN unzip /opt/hapi-cli/*.zip

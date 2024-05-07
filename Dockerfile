@@ -28,4 +28,5 @@ RUN wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publi
 
 ### Install hapi-fhir-cli
 RUN wget https://github.com/hapifhir/hapi-fhir/releases/download/v7.0.2/hapi-fhir-7.0.2-cli.zip -P /opt/hapi-cli
-RUN unzip /opt/hapi-cli/*.zip
+RUN unzip /opt/hapi-cli/*.zip -d /opt/hapi-cli/ && rm /opt/hapi-cli/*.zip
+

@@ -19,8 +19,8 @@ ENV PATH $HOME/gems/bin:$PATH
 
 RUN npm install -g fsh-sushi
 
-### Install firely terminal
-RUN dotnet tool install -g firely.terminal
+### Install firely terminal (fixed to 3.2.0 due to bug)
+RUN dotnet tool install -g firely.terminal --version 3.2.0 
 ENV PATH /root/.dotnet/tools:$PATH
 
 ### Install IG Publisher
